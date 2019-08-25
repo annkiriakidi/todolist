@@ -3,7 +3,9 @@
     <v-container grid-list-xl>
       <v-layout wrap>
         <v-flex xs10 sm6>
-          <v-text-field label="Enter a task" @keyup.enter="addTask" v-model="newTodo" clearable></v-text-field>
+          <form >
+          <v-text-field label="Enter a task" onsubmit="addTask" v-model="newTodo" clearable></v-text-field>
+          </form>
         </v-flex>
       </v-layout>
     </v-container>
